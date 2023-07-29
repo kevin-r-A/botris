@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="com.csl.cs108ademoapp.fragments.Configuracion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="50px">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Modo CSV"
+                android:background="@drawable/btn_ok_selector"
+                android:textColor="@color/md_white_1000"
+                android:id="@+id/btnCSV"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:text="Modo WEBSERVICE"
+                android:background="@drawable/btn_ok_selector"
+                android:textColor="@color/md_white_1000"
+                android:gravity="center_vertical|center_horizontal"
+                android:id="@+id/btnWEBSERVICE"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20px"
+            android:paddingBottom="5px">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.20"
+                android:paddingLeft="10px"
+                android:paddingTop="10px"
+                android:paddingBottom="5px"
+                android:text="URL Web:" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:background="@drawable/style_spinner"
+                android:paddingTop="4px"
+                android:paddingBottom="4px">
+
+                <EditText
+                    android:id="@+id/txtURL"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4px"
+                    android:paddingBottom="4px"
+                    android:textColor="@color/md_text_white"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="20px"
+            android:paddingBottom="5px">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.20"
+                android:paddingLeft="10px"
+                android:paddingTop="10px"
+                android:paddingBottom="5px"
+                android:text="PPC ID:" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.50"
+                android:background="@drawable/style_spinner"
+                android:paddingTop="4px"
+                android:paddingBottom="4px">
+
+                <EditText
+                    android:id="@+id/txtPPC_ID"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4px"
+                    android:paddingBottom="4px"
+                    android:textColor="@color/md_text_white"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="50px">
+
+            <Button
+                android:id="@+id/btn_guardar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.50"
+                android:background="@drawable/btn_ok_selector"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="GUARDAR"
+                android:textColor="@color/md_white_1000" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

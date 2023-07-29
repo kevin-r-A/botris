@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="60dp"
+    android:background="#00193a"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/input_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_weight="0.2"
+        android:textColor="@color/md_text_white"
+        android:text=""/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/caymandialogon"
+        android:id="@+id/imgv_logo"
+        android:layout_weight="0.10" />
+
+    <TextView
+        android:id="@+id/input_cayman"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:layout_weight="0.5"
+        android:textColor="@color/md_text_white"
+        android:text="CAYMAN SYSTEMS" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/style_spinnerborde">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cmb_cargacombo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:theme="@style/Widget.MyApp.HeaderBar.Spinner"
+            android:visibility="gone"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/txt_usuario"
+        android:hint="Usuario"
+        android:theme="@style/AppTheme.White"
+        android:textColor="@color/md_text_white"
+        android:background="@drawable/style_spinnerborde"
+        android:textSize="14dp"
+        android:layout_weight="0.05"
+        android:text=""
+        android:singleLine="true"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/txt_contrasenia"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:theme="@style/AppTheme.White"
+        android:textColor="@color/md_text_white"
+        android:background="@drawable/style_spinnerborde"
+        android:textSize="14dp"
+        android:layout_weight="0.05"
+        android:text=""
+        android:singleLine="true"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_ingresar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:padding="20dp"
+        android:text="INGRESAR"
+        android:background="@drawable/btn_redondo"/>
+
+    <TextView
+        android:id="@+id/texto_olvidaste_contrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="Copyright © Todos los Derechos Reservados"
+        android:textSize="11dp"
+        android:textColor="@color/md_grey_400" />
+</LinearLayout>

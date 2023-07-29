@@ -1,0 +1,20 @@
+<animation-list android:oneshot="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:drawable="@drawable/rfid5" android:duration="500"> </item>
+    <item android:drawable="@drawable/rfid1" android:duration="500"> </item>
+    <item android:drawable="@drawable/rfid5" android:duration="500"> </item>
+    <item android:drawable="@drawable/rfid12" android:duration="500"> </item>
+    <item android:drawable="@drawable/rfid5" android:duration="500"> </item>
+    <item android:drawable="@drawable/rfid23" android:duration="500"> </item>
+    <item android:drawable="@drawable/rfid5" android:duration="500"> </item>
+
+    <item android:drawable="@drawable/rfid1" android:duration="500"> </item>
+    <item android:drawable="@drawable/rfid5" android:duration="500"> </item>
+    <item android:drawable="@drawable/rfid12" android:duration="500"> </item>
+    <item android:drawable="@drawable/rfid5" android:duration="500"> </item>
+    <item android:drawable="@drawable/rfid23" android:duration="500"> </item>
+    <item android:drawable="@drawable/rfid5" android:duration="500"> </item>
+
+</animation-list>

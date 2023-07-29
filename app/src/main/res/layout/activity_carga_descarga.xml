@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    tools:context=".fragments.CargaDescarga">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="0dp">
+
+        <ImageView
+            android:layout_width="210dp"
+            android:layout_height="90dp"
+            android:src="@drawable/cargardatos"
+            android:id="@+id/img1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CARGAR DATOS AL DISPOSITIVO"
+            android:id="@+id/btn_cargardatos"
+            android:background="@drawable/btn_ok_selector"
+            android:textColor="@color/md_white_1000"
+            android:layout_above="@+id/img1"/>
+
+        <ImageView
+            android:layout_width="210dp"
+            android:layout_height="90dp"
+            android:src="@drawable/descargardatos"
+            android:id="@+id/img2"
+            android:layout_above="@+id/btn_cargardatos"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DESCARGAR REPORTE AL DISPOSITIVO"
+            android:id="@+id/btn_descargardatos"
+            android:background="@drawable/btn_ok_selector"
+            android:textColor="@color/md_white_1000"/>
+    </LinearLayout>
+
+</RelativeLayout>
